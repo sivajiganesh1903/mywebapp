@@ -26,7 +26,7 @@
             <version>3.4.0</version>
         </plugin>
     </plugins>
-</build>
+<!-- test jenkins trigger --></build>
 
 
 </project>
