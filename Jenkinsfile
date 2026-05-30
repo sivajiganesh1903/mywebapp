@@ -10,14 +10,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                echo 'Cloning source code from GitHub...'
-                git branch: 'main',
-                    url: 'git@github.com:sivajiganesh1903/mywebapp.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 echo "Building Docker image with tag: ${IMAGE_TAG}"
